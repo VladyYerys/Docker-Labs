@@ -11,30 +11,20 @@ In this lab, you will explore Docker Hub for images that will run a website. Onc
 
 # Get and View httpd
 In the Docker Instance, verify that docker is installed:
-```
-docker ps
-```
+```docker ps```
 Using docker, pull the httpd:2.4 image:
-```
-docker pull httpd:2.4
-```
+```docker pull httpd:2.4```
 Run the image:
-```
-docker run --name httpd -p 8080:80 -d httpd:2.4
-```
+```docker run --name httpd -p 8080:80 -d httpd:2.4```
 Check the status of the container:
-
-```
-docker ps
-```
+```docker ps```
 In a web browser, test connectivity to the container:
-```
-<PUBLIC_IP_ADDRESS>:8080
-```
+```<PUBLIC_IP_ADDRESS>:8080```
 
 
 # Run a Copy of the Website in httpd
 ![Screenshot_36](https://user-images.githubusercontent.com/106797604/197922795-913274f7-158e-414d-9d97-48fd73cf67b1.png)
+
 ```
 git clone https://github.com/linuxacademy/content-widget-factory-inc
 cd content-widget-factory-inc
@@ -50,7 +40,19 @@ docker ps
 ```
 
 ![Screenshot_44](https://user-images.githubusercontent.com/106797604/199852777-1aba9336-0bae-4d44-ab6a-00f69438eb86.png)
-
-
 ![Screenshot_37](https://user-images.githubusercontent.com/106797604/197923722-cd53f710-3d46-4652-b4be-e7d93b66bf2a.png)
+
+## Get and View Nginx
+1. Using docker, pull the latest version of nginx:
+```docker pull nginx```
+2. Verify that the image was pulled successfully:
+```docker images```
+3. Run the container using the nginx image:
+```docker run --name nginx -p 8081:80 -d nginx ```
+4. Check the status of the container:
+```docker ps```
+5. Verify connectivity to the nginx container:
+```<PUBLIC_IP_ADDRESS>:8081```
+
+![Screenshot_45](https://user-images.githubusercontent.com/106797604/199853455-3c26f957-7581-4339-abcf-62fcbbec7293.png)
 
