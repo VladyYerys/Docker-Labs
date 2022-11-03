@@ -49,5 +49,8 @@ docker ps
 <PUBLIC_IP_ADDRESS>:8080
 ```
 
+![Screenshot_44](https://user-images.githubusercontent.com/106797604/199852777-1aba9336-0bae-4d44-ab6a-00f69438eb86.png)
+
+
 ![Screenshot_37](https://user-images.githubusercontent.com/106797604/197923722-cd53f710-3d46-4652-b4be-e7d93b66bf2a.png)
 
