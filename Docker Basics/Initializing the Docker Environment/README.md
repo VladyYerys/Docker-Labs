@@ -33,7 +33,7 @@ sudo systemctl enable nginx
 sudo systemctl start nginx
 sudo yum update -y
 #Install DOCKER
-sudo amazon-linux-extras install docker
+sudo amazon-linux-extras install docker -y
 sudo service docker start
 sudo usermod -a -G docker ec2-user
 #Make docker auto-start
