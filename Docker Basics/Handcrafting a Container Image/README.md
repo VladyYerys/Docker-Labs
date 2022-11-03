@@ -20,6 +20,8 @@ Update the base image and install git.
 Get website code from GitHub.
 Remove the default index page and copy the website files to httpd's web serving directory.
 Log out of the container.
+![Screenshot_40](https://user-images.githubusercontent.com/106797604/199671016-3c225641-cd7e-4f15-89b3-45b70b92424a.png)
+
 
 ### 3.Create an Image from the Container
 Find the template container's ID.
@@ -35,6 +37,8 @@ Note: You can use the container's name in place of its ID for docker commit. How
 5. Create a new image named widgetfactory with version v2 from the container
 6. View the image information.
 7. Delete the v1 image since it is obsolete.
+![Screenshot_41](https://user-images.githubusercontent.com/106797604/199675362-c6b2617b-fc7e-4c53-8a41-c6ce8a3258eb.png)
+
 
 ### 5.Run Multiple Containers from the Image
 Start three containers from the widgetfactory:v2 image with different published web ports. The exposed ports should be in the 8000 to 8999 range.
