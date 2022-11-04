@@ -34,9 +34,9 @@ Thanks to an increase in demand for your services, your organization wants to be
 1. List the default networks:
 ```docker network ls```
 2. Run an httpd container named web1, without specifying a network, and see which network it uses:
+```docker run -d --name web1 httpd:2.4
+docker inspect web1
 ```
-docker run -d --name web1 httpd:2.4
-docker inspect web1```
 3. Take note of the ```IPAddress```.
 4. Run a container using the busybox image, and see if you can connect to the web1 server:
 ```docker run --rm -it busybox```
@@ -92,7 +92,8 @@ docker inspect web1```
 ```docker start web3```
 7. Run a container using the busybox image, and see if you can connect to the web3 server:
 ```docker run --rm -it --network host busybox
-ping web3```
+ping web3
+```
 8. Using wget, attempt to access localhost within the busybox image:
 ```wget localhost```
 9. Attempt to ping web2:
