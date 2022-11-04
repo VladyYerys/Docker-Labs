@@ -1,6 +1,6 @@
 ### Building Smaller Images with Mutli-Stage Builds
 
-###Introduction
+### Introduction
 Containers are made of layers. Compile and install operations performed in the image, add to the layers, increasing the size of the container.
 
 Instead of keeping all of those layers into the final image, you can split those steps off, and only use the finished product.
