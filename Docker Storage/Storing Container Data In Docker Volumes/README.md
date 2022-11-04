@@ -1,6 +1,7 @@
 # Storing Container Data In Docker Volumes
 
 ![Screenshot_42](https://user-images.githubusercontent.com/106797604/199679754-b02a48d7-7d3d-4b31-978f-0c35884ded5d.png)
+![Screenshot_46](https://user-images.githubusercontent.com/106797604/199854128-f5244ba3-56d6-4606-906b-b70fd4aa65f5.png)
 
 
 You want to reduce the amount of static and infrequently changing content being built into your images. Some of the content does change occasionally, so it would be nice if the container images did not have to be rebuilt to handle these minor changes.
@@ -29,6 +30,8 @@ In this lab, you will learn how Docker volumes interact with containers. You wil
 ### 2.Create a Docker Volume
 1. Create a Docker volume for the website code.
 2. Copy the website code into the volume from the host. You will need to use root permissions.
+![Screenshot_47](https://user-images.githubusercontent.com/106797604/199856213-b3186150-6291-41a3-9149-8a54cd711ef6.png)
+
 
 ### 3.Use the Website Volume with Containers
 1. Run an httpd container and mount the data volume. Expose container port 80 to view the website.
@@ -41,6 +44,8 @@ In this lab, you will learn how Docker volumes interact with containers. You wil
 ### 4.Clean Up Unused Volumes
 1. Remove any volumes not currently in use.
 2. View the new list of volumes.
+![Screenshot_48](https://user-images.githubusercontent.com/106797604/199857886-a9d2eb89-5bd0-46c3-8719-845addd228ce.png)
+
 
 ### 5.Back Up and Restore the Docker Volume
 1. Inspect the website Docker volume to find its location on disk.
@@ -48,6 +53,10 @@ In this lab, you will learn how Docker volumes interact with containers. You wil
 3. Back up the Docker volume from a container by mounting the volume and a backup data location to another container.
 4. Restore a backup.
 Note: Because the Docker data directories are protected, change to the root user for this task using sudo su - and the provided password.
+![Screenshot_49](https://user-images.githubusercontent.com/106797604/199859030-f473a7cb-bb7f-41ec-9fe5-e95762a19a40.png)
+![Screenshot_50](https://user-images.githubusercontent.com/106797604/199860017-488f41c5-bb8a-42e0-a0f6-0996a9308202.png)
+
+
 
 ### Discover Anonymous Docker Volumes
 1. Check the docker images:
