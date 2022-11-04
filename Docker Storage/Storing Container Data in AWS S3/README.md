@@ -29,6 +29,8 @@ Note: While this method works for static content, or content that changes occasi
    - Output is optional, but json is a good choice.
 3. Copy the credentials to the root user.
 4. Install s3fs-fuse. This package is in EPEL, which is already installed on the server.
+![Screenshot_53](https://user-images.githubusercontent.com/106797604/199864870-600eca73-7852-49a4-83c1-5b18a110506e.png)
+
 
 ### 2.Prepare the Bucket
 1. Create a mount point on the server.
@@ -38,6 +40,8 @@ Note: While this method works for static content, or content that changes occasi
 3. Copy the website files into the bucket.
 4. Verify the files are in the folder.
 5. Verify the files are in the S3 bucket.
+![Screenshot_54](https://user-images.githubusercontent.com/106797604/199873586-6e95a205-3570-4074-a8c6-9cb542f964b1.png)
+
 
 ### 3.Use the S3 Bucket Files in a Docker Container
 1. Run an httpd container to serve the website. Remember to mount the bucket and publish the web server port.
