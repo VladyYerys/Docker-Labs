@@ -126,6 +126,8 @@ Note: Because the Docker data directories are protected, change to the root user
 ```docker volume ls```
 
 ### Back Up and Restore the Docker Volume
+
+```
 1. Switch to the root user:
 ```sudo -i```
 2. Find where the website volume data is stored:
@@ -159,6 +161,8 @@ Note: Because the Docker data directories are protected, change to the root user
 ```tar xf /tmp/<BACKUP_FILE_NAME>.tgz .```
 17. Verify that the data was restored successfully:
 ```ls -l```
+
+```
 
 
 ### Conclusion
