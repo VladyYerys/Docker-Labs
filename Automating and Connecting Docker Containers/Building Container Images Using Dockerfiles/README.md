@@ -16,6 +16,9 @@ The Widget Factory website is available from GitHub and has already been cloned 
 1. Create a Dockerfile that uses httpd:2.4 as the base image, then runs basic package updates.
 2. Build the 0.1 version of the widgetfactory image using the Dockerfile.
 3. Inspect the image to see its size and layers.
+![Screenshot_56](https://user-images.githubusercontent.com/106797604/200051686-39340cec-3c42-4f94-abbb-8629a1f91ebe.png)
+![Screenshot_57](https://user-images.githubusercontent.com/106797604/200051679-311d08f2-9c86-4f8a-93de-d3fc67805e3e.png)
+![Screenshot_58](https://user-images.githubusercontent.com/106797604/200051685-dab39ab7-ab3a-404a-baae-b2371a033c78.png)
 
 ### 2.Load the Website into the Container
 1. Remove the Apache welcome page from the image.
@@ -76,10 +79,7 @@ export showSize='{{ .Size }}'
 2. Remove the Apache welcome page from the image by adding the following:
 ```RUN rm -f /usr/local/apache2/htdocs/index.html```
 3. Save the file:
-```
-ESC
-:wq
-```
+```ESC:wq```
 4. Build version 0.2 of the widgetfactory image:
 ```docker build -t widgetfactory:0.2 .```
 5. Inspect both versions of the widgetfactory image to see the differences in size and layers:
@@ -105,10 +105,7 @@ WORKDIR /usr/local/apache2/htdocs
 COPY ./web .
 ```
 14. Save the file:
-```
-ESC
-:wq
-```
+```ESC:wq```
 15. Build version 0.3 of the widgetfactory image:
 ```docker build -t widgetfactory:0.3 .```
 16. Inspect versions 0.2 and 0.3 to see the differences in size and layers:
