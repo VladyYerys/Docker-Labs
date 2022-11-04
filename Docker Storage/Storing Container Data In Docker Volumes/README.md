@@ -159,5 +159,7 @@ Note: Because the Docker data directories are protected, change to the root user
 ```tar xf /tmp/<BACKUP_FILE_NAME>.tgz .```
 17. Verify that the data was restored successfully:
 ```ls -l```
+
+
 ### Conclusion
 Congratulations — you've completed this hands-on lab!
