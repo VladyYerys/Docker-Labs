@@ -30,3 +30,14 @@ Migrating static content into containers was a great way to learn the basics of 
 - Run, Evaluate, and Upgrade
 - Upgrade to Gunicorn
 - Build a Production Image
+
+
+# Building Smaller Images with Mutli-Stage Builds
+
+### ABOUT THIS LAB
+Containers are made of layers. Compile and install operations performed in the image, add to the layers, increasing the size of the container. Instead of keeping all of those layers into the final image, you can split those steps off, and only use the finished product. Docker provides this capability through multi-stage builds. In this lab, you will build an image the usual way, and inspect the image to see how it is put together. You'll then convert the Dockerfile to use Multi-Stage builds, and see how the new image compares.
+
+### LEARNING OBJECTIVES
+- Do Prep Work in the Image
+- Add a Build Stage
+- Create a Smaller Image
